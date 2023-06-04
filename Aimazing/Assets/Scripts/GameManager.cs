@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     public GameObject targetPrefab;
     public GameObject mainTargetPrefab;
     public GameObject playerRef;
-    public Text text;
 
     private Vector3 mainPos = new Vector3(0.23f, 0.77f, 8.29f);
     private Vector3 mainPosScreen;
@@ -51,7 +50,6 @@ public class GameManager : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Gun");
             RaycastHit raycastHit;
             Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
-            UpdateAccuracy();
             if (Physics.Raycast(ray, out raycastHit, 100f, LayerMask.GetMask("Target")))
             {
                 if (raycastHit.transform != null)
@@ -135,19 +133,6 @@ public class GameManager : MonoBehaviour
     private void OnApplicationQuit()
     {
         gameRunning = false;
-    }
-
-    private void UpdateAccuracy()
-    {
-        // Calculate accuracy as a percentage
-        float accuracyPercentage = 0f;
-        if (totalShotsFired > 0)
-        {
-            accuracyPercentage = (float)points / totalShotsFired * 100f;
-        }
-
-        // Display or use the accuracy percentage as needed
-        text.text = "Accuracy: " + (accuracyPercentage.ToString("F2") + "%");
     }
 
 }

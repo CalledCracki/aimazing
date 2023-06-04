@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Text text;
     public Slider slider;
-    public float mouseSensitivity = 10f;
+    public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
 
