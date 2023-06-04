@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: eab34db4c33184b47b9e03a1e581fb2b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Tilt Neon
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 04a7796a4559db44bae9ec18b2665629, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
